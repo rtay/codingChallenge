@@ -12,7 +12,7 @@ public class XmlAttribute {
 	}
 	
 	public String toString() {
-		return this.name + "=" + this.value;
+		return '\"' + this.name + "=" + this.value + '\"';
 	}
 		
 }
