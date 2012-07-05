@@ -11,7 +11,7 @@ import java.util.Vector;
  * 		   manages conversion of object to string toString()
  */
 public class XmlTag {
-	private static final char LEVEL_DELIMITER = '\n'; // may require change depending on platform
+	private static final String LEVEL_DELIMITER = System.getProperty("line.separator"); // may require change depending on platform
 	private String name; // compulsory attribute 
 	private Vector <XmlTag> childTags;
 	private Vector <XmlAttribute> attributes;
